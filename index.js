@@ -1,12 +1,12 @@
 // Shows one page and hides the other two
-document.querySelectorAll('div').forEach(div => {
-    div.style.display = 'none';
+document.querySelectorAll('span').forEach(span => {
+    span.style.display = 'none';
 });
 function showPage(page) {
 
     // Hide all of the divs:
-    document.querySelectorAll('div').forEach(div => {
-        div.style.display = 'none';
+    document.querySelectorAll('span').forEach(span => {
+        span.style.display = 'none';
     });
 
     // Show the div provided in the argument
@@ -25,3 +25,4 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     })
 });
+document.querySelector('.container').style.display = 'block';
