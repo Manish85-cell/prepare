@@ -2,6 +2,9 @@
     text-align: center;
     color:brown;
 }
+body{
+    background-color:bisque;
+}
 /*position
 relative: positions the element relative to its normal position and will leave a gap at its normal position;
 absolute: positions the element relative to its parent position
@@ -10,17 +13,34 @@ fixed: position the element relative to the browser window
 sticky: position 
 */
 .cont{
-
-    height: 50px;
-    margin: 2px;
-    border: 2px solid blueviolet;  
+    
+    display:flex;
+    margin-left:75%;
+    
+    /* border: 2px solid blueviolet;   */
+}
+.cont div li {
+    list-style-type:none;
+}
+a{
+    text-decoration: none;
+    color:inherit;
+}
+h2{
+    color:blueviolet
 }
 .container{
     display:inline-block;
     width: 100px;
     height: 50px;
     margin: 2px;
-    border: 2px solid blueviolet;  
+    /* border: 2px solid blueviolet;   */
+}
+span ul li{
+    list-style-type:decimal;
+    margin:5px;
+    padding:2px;
+    font-size:larger
 }
 #leet{
     /* position:sticky;
