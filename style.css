@@ -15,7 +15,9 @@ sticky: position
 .cont{
     
     display:flex;
+
     margin-left:80%;
+
     
     /* border: 2px solid blueviolet;   */
 }
