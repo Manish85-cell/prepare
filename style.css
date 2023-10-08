@@ -9,7 +9,14 @@ absolute: positions the element relative to its parent position
 fixed: position the element relative to the browser window
 sticky: position 
 */
+.cont{
+
+    height: 50px;
+    margin: 2px;
+    border: 2px solid blueviolet;  
+}
 .container{
+    display:inline-block;
     width: 100px;
     height: 50px;
     margin: 2px;
@@ -22,7 +29,4 @@ sticky: position
     top:0px;
     
 }
-.bar{
-    height:4000px;
-    border:2px solid black;
-}
+
