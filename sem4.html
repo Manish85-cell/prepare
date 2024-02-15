@@ -17,16 +17,67 @@
                  text-decoration:none;
                  
         }
+        table{
+            border:2px solid black;
+            border-collapse: collapse;
+        }
+        th, tr, td{
+            border:2px solid black;
+        }
     </style>
 </head>
 <body>
     <div class="container">
          <h1>Semester 4</h1>
-         <span><a href="opsystem.pdf">Operating System</a>||<b>15</b></span><br>
-         <span><a href="probability.pdf">Probability and Stochstic processes</a>||<b>25</b></span><br>
-         <span><a href="auto&finite.pdf">Theory of Automata and Formal Languages</a>||<b>25</b></span><br>
-         <span><a href="datacomm.pdf">Data Communication</a>||<b>15</b></span><br>
-         <span><a href="software.pdf">Software Engineering</a>||<b>15</b></span><br>
+         <h2 id="date_time" style="color:rgb(5, 62, 5)"></h2>
+         <h2 id = "left"></h2>
+         <h4>MID SEM</h4>
+         <h2><a href="pyq.pdf">PYQ</a></h2>
+        <table>
+            <thead>
+                <th>Dates</th>
+                <th>Subject</th>
+                <th>Total_Marks</th>
+                <th>Scored_Marks</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>20/02/24</td>
+                    <td><a href="opsystem.pdf">Operating System</a></td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>21/02/24</td>
+                    <td><a href="auto&finite.pdf">Theory of Automata and Formal Languages</a></td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>22/02/24</td>
+                    <td><a href="software.pdf">Software Engineering</a></td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>23/02/24</td>
+                    <td><a href="datacomm.pdf">Data Communication</a></td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>24/02/24</td>
+                    <td><a href="probability.pdf">Probability and Stochstic processes</a></td>
+                    <td>25</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
+    <script>
+        function updateDateTime(){
+            const now = new Date();
+            const currentDateTime = now.toLocaleString();
+            document.querySelector('#date_time').innerHTML = currentDateTime;
+            document.querySelector('#left').innerHTML =   18-now.getDate() +"days left";  
+         }
+
+        setInterval(updateDateTime, 1000);
+    </script>
 </body>
 </html>
